@@ -8,6 +8,3 @@
 3) add event listener (submit) to run the function for the custom api link we create
 4) on search, homepage will switch to result page and display the list of seaches we populated.
 5) on that same page you will be able to search for a new topic and repopulate the page again.
-
-
-    
