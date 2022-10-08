@@ -21,33 +21,39 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hello World</title>
+    <title>Search LoC</title>
   </head>
-  <body>
-    <header class="head">
-     <h1 class="search_title"> Search Library of Congress</h1>
-    </header>
+  <body class="bg-dark">
+  
+    <main class="row justify-content-around align-content-around">
+      <div class="col-7 bg-white">
+        <h3 class="text-center">Library of Congress Search Engine</h3>
+        <br />
+        <form id="search-form">
+          <div class="form-group form-row">
+            <div class="col-12">
+              <input type="text" class="form-control" id="search-input" placeholder="Search"/>
+            </div>
+          </div>
 
-    <main class="flex-row justify-space-around">
-      <div class="col-6">
-
-        <div class="card">
-          <h3 class="card-header"></h3>
-          <form id="user-form" class="card-body">
-            <label class="form-label" for="username"></label>
-            <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-          </form>
-        </div>
-
-        <div class="card">
-          <h3 class="card-header text-uppercase">Search By User</h3>
-          <form id="user-form" class="card-body">
-            <label class="form-label" for="username">Username</label>
-            <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-          </form>
-        </div>
-        <button type="submit" class="btn">Search</button>
-
+          <div class="form-group form-row">
+            <div class="col-12">
+              <select name="format" id="dropdown" class="form-control">
+                <option selected="selected">Select Format</option>
+                <option data-format="maps">Maps</option>
+                <option data-format="audio">Audio</option>
+                <option data-format="photos">Photos</option>
+                <option data-format="manuscripts">Manuscripts</option>
+                <option data-fomrat="newspaper"> Newpapers</option>
+                <option data-format="film-videos"> Film/Videos</option>
+                <option data-format="notated-music"> Notated music</option>
+                <option data-format="webistes"> Webistes</option>
+              </select>
+            </div> 
+          </div>
+          <button type="submit" value="Submit" class="btn btn-outline-info col-12">
+            Submit</button>
+        </form>
       </div>
     </main>
 
